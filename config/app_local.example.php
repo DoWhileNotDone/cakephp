@@ -83,12 +83,11 @@ return [
      */
     'EmailTransport' => [
         'default' => [
-            'host' => 'localhost',
+            'host' => 'mailtrap',
             'port' => 25,
-            'username' => null,
-            'password' => null,
-            'client' => null,
-            'url' => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
+            'className' => 'Smtp',
+            'client'    => null,
+            'url'       => env('EMAIL_TRANSPORT_DEFAULT_URL', null),
         ],
     ],
 ];

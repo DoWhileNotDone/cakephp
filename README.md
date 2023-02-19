@@ -39,8 +39,9 @@
 3. Using the containers
    * The code can be edited in an ide, the directory is mapped into the php and nginx directories
      * http://localhost:8881/
-   * Run the php unit tests
+   * Run the tests
       * docker compose exec php-fpm vendor/bin/phpunit
+      * docker run -it --rm -v "$PWD":/app -w "/app" node:latest yarn run test
    * Access the db via cli
       * docker compose exec mysql mysql -u cake_usr -pcake_pw cake_app
       * The db volume is mapped to ./docker/volumes/mysql so it persists
@@ -49,7 +50,7 @@
    * Interacting with cake
      * docker compose exec php-fpm bin/cake {command here}
    * View Mail 
-     * http://127.0.0.1:8882/
+     * http://localhost:8882/
      * mailtrap/mailtrap 
 
 4. Stop the running containers
