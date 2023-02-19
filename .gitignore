@@ -6,7 +6,10 @@
 /tmp/*
 /vendor/*
 
-TODO.md
+
+# Build Files #
+##########################
+webroot/js/main.js
 
 # Docker Volume files #
 ##########################
@@ -86,3 +89,6 @@ coverage
 *.njsproj
 *.sln
 *.sw?
+
+# Misc
+TODO.md
