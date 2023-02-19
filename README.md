@@ -49,7 +49,7 @@
    * Interacting with cake
      * docker compose exec php-fpm bin/cake {command here}
    * View Mail 
-     * http://127.0.0.1:8882/
+     * http://localhost:8882/
      * mailtrap/mailtrap 
 
 4. Stop the running containers
