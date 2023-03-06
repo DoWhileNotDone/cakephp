@@ -1,11 +1,14 @@
+
+
+
 <script setup>
-import HelloWorld from "./components/HelloWorld.vue";
+import UserList from "./components/UserList.vue";
 </script>
 
 <template>
     <header>
-        <div class="wrapper">
-            <HelloWorld msg="You did it!" />
+        <div>
+            <UserList msg="You did it!" />
         </div>
     </header>
 </template>
