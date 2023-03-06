@@ -2,6 +2,8 @@
 const path = require("path");
 const { VueLoaderPlugin } = require("vue-loader");
 
+//Tailwind / Post css
+
 module.exports = {
     mode: "development",
     entry: "./resources/js/main.js",
@@ -17,7 +19,7 @@ module.exports = {
             },
             {
                 test: /\.css$/,
-                use: ["vue-style-loader", "css-loader"],
+                use: ["vue-style-loader", "css-loader", "postcss-loader"],
             },
         ],
     },
