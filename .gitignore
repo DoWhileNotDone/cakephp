@@ -9,7 +9,9 @@
 
 # Build Files #
 ##########################
-webroot/js/main.js
+webroot/js
+webroot/css
+webroot/assets
 
 # Docker Volume files #
 ##########################
